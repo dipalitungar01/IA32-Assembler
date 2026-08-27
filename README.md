@@ -8,7 +8,7 @@ The program reads the opcode table from `opcode.txt` and the assembly program fr
 
 It checks whether the mnemonic is present in the opcode table and identifies the type of operand used in the instruction.
 
----
+
 
 ## 2] Team Members and Work
 
@@ -49,7 +49,7 @@ Code File:
 
 GitHub: https://github.com/mugdhak80
 
----
+
 
 ## 3] GitHub Branches
 
@@ -59,27 +59,26 @@ The project contains the following branches:
 2. `dipali-opcode` — Opcode checking
 3. `mugdha-operand` — Operand handling
 
----
+
 
 ## 4] Program Flow
 
 The program works in the following way:
-
-```text
 opcode.txt
-     ↓
+↓
 Read Opcode Table
-     ↓
+↓
 AssemblyProgram.asm
-     ↓
+↓
 Read Mnemonic and Operands
-     ↓
+↓
 Check Mnemonic
-     ↓
+↓
 FOUND / NOT FOUND
-     ↓
+↓
 Identify Operand Type
-     ↓
+↓
 Register / Constant / Memory / Symbol
-     ↓
+↓
 Display Output
+
