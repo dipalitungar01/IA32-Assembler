@@ -1,6 +1,3 @@
-# IA32-Assembler
-
-
 # Opcode Check Assignment
 
 ## 1] Assignment Overview
@@ -27,6 +24,10 @@ Responsibilities:
 
 Branch: `dipali-opcode`
 
+Code File:
+
+- `OpcodeCheck.c`
+
 GitHub: https://github.com/dipalitungar01
 
 ### 2. Mugdha Kulkarni — Operand Handling
@@ -34,13 +35,17 @@ GitHub: https://github.com/dipalitungar01
 Responsibilities:
 
 - Handles the operands used in the assembly program.
-- Checks the type of operand.
+- Checks the type of each operand.
 - Identifies register operands.
 - Identifies constant operands.
 - Identifies memory operands.
 - Identifies symbol operands.
 
 Branch: `mugdha-operand`
+
+Code File:
+
+- `OpcodeCheck.c`
 
 GitHub: https://github.com/mugdhak80
 
@@ -54,27 +59,27 @@ The project contains the following branches:
 2. `dipali-opcode` — Opcode checking
 3. `mugdha-operand` — Operand handling
 
-The branches are used so that both members can work on their respective parts of the project.
-
 ---
 
 ## 4] Program Flow
 
-The program works as follows:
+The program works in the following way:
 
 ```text
+opcode.txt
+     ↓
+Read Opcode Table
+     ↓
 AssemblyProgram.asm
-        ↓
-Read Assembly Instruction
-        ↓
-Read Mnemonic and Operand
-        ↓
-Check Mnemonic in opcode.txt
-        ↓
+     ↓
+Read Mnemonic and Operands
+     ↓
+Check Mnemonic
+     ↓
 FOUND / NOT FOUND
-        ↓
-Check Operand Type
-        ↓
+     ↓
+Identify Operand Type
+     ↓
 Register / Constant / Memory / Symbol
-        ↓
+     ↓
 Display Output
