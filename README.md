@@ -52,7 +52,9 @@ GitHub: https://github.com/mugdhak80
 The project contains the following branches:
 
 main - Final project
+
 dipali-opcode - Opcode checking
+
 mugdha-operand - Operand handling
 
 4] Program Flow
