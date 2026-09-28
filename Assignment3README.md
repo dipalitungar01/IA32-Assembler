@@ -59,7 +59,7 @@ Little Endian : F4 01 00 00
 
  Functions Used
 
-### decimal()
+ decimal()
 
 This function converts a decimal number into hexadecimal and displays its 4-byte little-endian form.
 
