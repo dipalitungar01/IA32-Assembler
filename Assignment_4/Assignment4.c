@@ -194,7 +194,7 @@ int getValueSize(char token[], int unitSize)
         return 0;
     }
 
-    /* Calculate string length */
+   
     if (*item == '\'' || *item == '"')
     {
         char quote = *item;
@@ -339,8 +339,6 @@ int getInstructionSize(const char name[])
     return 1;
 }
 
-
-/* Convert a string to lowercase */
 void toLowerCase(char str[])
 {
     for (int i = 0; str[i] != '\0'; i++)
@@ -348,8 +346,6 @@ void toLowerCase(char str[])
         str[i] = (char)tolower((unsigned char)str[i]);
     }
 }
-
-
 
 void checkTarget(const char *instruction,
                  const char *operands)
@@ -400,8 +396,6 @@ void checkTarget(const char *instruction,
     }
 }
 
-
-
 void processInstruction(char *instructionText)
 {
     char instruction[NAME_SIZE] = "";
@@ -420,8 +414,6 @@ void processInstruction(char *instructionText)
 
     textLC += getInstructionSize(instruction);
 }
-
-
 
 void processLine(char line[])
 {
