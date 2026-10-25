@@ -1,0 +1,12 @@
+; Demonstrates CMP and JNE
+MOV EAX, 1
+MOV EBX, 2
+CMP EAX, EBX
+JNE NOT_EQUAL
+MOV ECX, 99       ; skipped
+JMP DONE
+NOT_EQUAL:
+MOV ECX, 2
+DONE:
+MOV EAX, ECX
+HLT
