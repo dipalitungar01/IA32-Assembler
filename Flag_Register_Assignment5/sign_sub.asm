@@ -1,0 +1,4 @@
+; 0 - 1 wraps to 0xFFFFFFFF: SF=1, CF=1
+MOV EAX, 0
+SUB EAX, 1
+HLT
